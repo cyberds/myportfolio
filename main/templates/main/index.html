@@ -1,0 +1,940 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Doosu's Portfolio</title>
+
+    <meta name="description" content="Hi, I'm Doosu Bere, a fullstack web developer. Please call me, I'm available for hire. +2349081505800 or email: dskbagain@gmail.com">
+    <meta name="author" content="Doosu Bere">
+    <meta name="keywords" content="Doosu Bere">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Varela" rel="stylesheet">
+
+    <!-- Favicon
+    ================================================== -->
+    <link rel="icon" type="image/x-icon" href="{% static 'main/img/favicon2.png' %}">
+    <link rel="manifest" href="{% static 'main/img/manifest.json' %}">
+    <link rel="mask-icon" href="{% static 'main/img/safari-pinned-tab.svg' %}" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Stylesheets
+    ================================================== -->
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    
+
+    <!-- Font Awesome core CSS -->
+    <link rel="stylesheet" href="{% static 'main/css/font-awesome.min.css' %}" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <nav id="hidenav" class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed hideToggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Doosu's Portfolio</span>
+            </button>
+            <a class="navbar-brand" href="#top">Doosu's Portfolio</a>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#top">Home</a></li>
+              <li><a href="#intro">Intro</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#works">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="{% url 'blogHome' %}">blog</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+    <!-- Hero Section, Background Image change in css -->
+    <div id="top" class="hero background-overlay">
+        <div class="wrapper">
+            <div class="cols cols0">
+                <img src="{% static 'main/img/hi_favicon.png' %}" id="hi" alt="Hi">
+                <h1 class="heroh1">What I do<br><span class="multiText"> </span></h1>
+                <p class="herop">I'm a fullstack Django developer, and a designer. I seek to make a difference with my skills, and yes, I meet deadlines. </p>
+                <a href="#works"><button style="--content: 'see projects'; font-family:arial; filter:saturate(300%);">
+                    <div class="left"></div>
+                    see projects
+                    <div class="right"></div>
+                  </button></a>
+                  <a href="#contact"><button style="--content: 'Hire me!'; font-family:arial;">
+                    <div class="left"></div>
+                      Hire me!
+                    <div class="right"></div>
+                  </button></a>
+                  
+            </div>
+            <div class="cols cols1">
+                <div class="imgbox">
+                    <img src="{% static 'main/img/splash.png' %}" id="splash" alt="splash">
+                    <img src="{% static 'main/img/dd2.png' %}" id="heropic" alt="this is a picture of me">
+                </div>
+            </div>
+
+        
+
+        </div><!-- /.hero-content -->
+
+        <div class="hero-arrow page-scroll home-arrow-down">
+            <a class="" href="#intro"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+        </div><!-- /.hero-arrow -->
+
+    </div><!-- /.hero -->
+    <!-- End Hero -->
+
+    <!-- Header -->
+    <header id="masthead" class="site-header">
+        <nav id="primary-navigation" class="site-navigation" data-spy="affix">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-perfect-collapse" aria-expanded="false" >
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                    <!-- Name -->
+                    <div class="page-scroll site-logo">
+                        <a href="#top">Doosu</a>
+                    </div>
+
+                </div><!-- /.navbar-header -->
+
+                <div class="main-menu collapse navbar-collapse" id="portfolio-perfect-collapse">
+
+                    <!-- Navigation -->
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="page-scroll"><a href="#top">Home</a></li>
+                        <li class="page-scroll"><a href="#intro">Intro</a></li>
+                        <li class="page-scroll"><a href="#about">About</a></li>
+                        <li class="page-scroll"><a href="#education">Education</a></li>
+                        <li class="page-scroll"><a href="#works">Projects</a></li>
+                        <li class="page-scroll"><a href="#contact">Contact</a></li>
+                        
+                    </ul><!-- /.navbar-nav -->
+
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav><!-- /.primary-navigation -->
+    </header><!-- /#header -->
+    <!-- End Header -->
+
+    <!-- Main content -->
+    <main id="main" class="site-main">
+
+        <!-- Hello section -->
+		<section class="site-section section-hello" id="intro">
+			<div class="container">
+				<h2>HELLO &amp; WELCOME</h2>
+				<p class="section-subtitle"><span>EXPLORE MY WORLD</span></p>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="main-service text-right">
+							<div class="rectangle">
+								<i class="fa fa-calendar" aria-hidden="true"></i>
+							</div><!-- /.rectangle -->
+							<h3>I Meet Deadlines</h3>
+							<p>Your deadline is the most important value for me. My job is to make sure the job is done perfectly before the deadline.</p>
+						</div><!-- /.main-service -->
+                        <div class="main-service text-right">
+                            <div class="rectangle">
+                                <i class="fa fa-comments" aria-hidden="true"></i>
+                            </div>
+                            <h3>Communication Is Key</h3>
+                            <p>I believe in listening to understand exactly what someone wants, and if required, share my opinion. No wonder I fit properly in teams.</p>
+                        </div><!-- /.main-service -->
+					</div>
+					<div class="col-sm-4">
+						<div class="big-rectangle">
+							<img src="{% static 'main/img/dd3.jpg' %}" alt="my picture">
+						</div><!-- /.big-rectangle -->
+					</div>
+					<div class="col-sm-4">
+                        <div class="main-service text-left">
+                            <div class="rectangle">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </div>
+                            <h3>Quality Control</h3>
+                            <p>I love my job and I strive to make sure everything I do screams excellence.</p>
+                        </div><!-- /.main-service -->
+						<div class="main-service text-left">
+							<div class="rectangle">
+								<i class="fa fa-list" aria-hidden="true"></i>
+							</div><!-- /.rectangle -->
+							<h3>Multitasking</h3>
+							<p>Keeping busy is what I do. I'm not phased by having to do multiple things at a time.</p>
+						</div><!-- /.main-service -->
+					</div>
+				</div>
+			</div>
+		</section><!-- /.section-hello -->
+        <!-- End Hello section -->
+
+        <!-- Quote section -->
+		<section class="section-background section-quote background-overlay text-center">
+			<div class="container">
+				<p>I make my <span>work look good</span> &amp; have experience in the creation of brand identities for <span>print &amp; web</span>, with a difference.</p>
+			</div>
+		</section><!-- /.section-quote -->
+        <!-- End Quote section -->
+
+        <!-- About section -->
+        <section class="site-section section-about text-center" id="about">
+            <div class="container">
+                <h2>ABOUT Doosu's WORK</h2>
+                <p class="section-subtitle"><span>My goal is to build products and services</span></p>
+                <div class="row">
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="feature-about">
+                            <div class="medium-rectangle rectangle">
+                                <i class="fa fa-laptop" aria-hidden="true"></i>
+                            </div><!-- /.rectangle -->
+                            <h3>Frontend</h3>
+                            <p>My approach to website design is to create a website that strengthens your company’s brand while ensuring ease of use and simplicity for your audience. <br class="preferred_tools"><font class="preferred_tools">Preferred Tools: HTML, CSS, Bootstrap, JavaScript, jQuery</font></p>
+                        </div><!-- /.feature-about -->
+                    </div>                    
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="feature-about">
+                            <div class="medium-rectangle rectangle">
+                                <i class="fa fa-code" aria-hidden="true"></i>
+                            </div><!-- /.rectangle -->
+                            <h3>Backend dev.</h3>
+                            <p>This is my favourite! I enjoy building systems because it helps showcase my innovative capabilities. <br class="preferred_tools"><font class="preferred_tools">Preferred Tools: Python, Django, REST Framework, AJAX, MySQL, PostGres, Heroku</font></p>
+                        </div><!-- /.feature-about -->
+                    </div>                    
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="feature-about">
+                            <div class="medium-rectangle rectangle">
+                                <i class="bi bi-window-sidebar"></i>
+                            </div><!-- /.rectangle -->
+                            <h3>UI/UX, Graphics Design</h3>
+                            <p>User Interfaces are the heartbeat of any app or website. I understand this so I make sure to put crucial issues like accessibility and asthetics into consideration when designing. <br class="preferred_tools"><font class="preferred_tools">Preferred Tool: Figma, Adobe XD</font></p>
+                        </div><!-- /.feature-about -->
+                    </div>                    
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="feature-about">
+                            <div class="medium-rectangle rectangle">
+                            <i class="bi bi-wordpress" aria-hidden="true"></i>
+                            </div><!-- /.rectangle -->
+                            <h3>WordPress</h3>
+                            <p>Won't it be nice to have your brand identity consistent and designed with excellent quality? Well, this is what I offer. <br class="preferred_tools"><font class="preferred_tools">Preferred Tools: Photoshop, CorelDraw, InDesign</font></p>
+                        </div><!-- /.feature-about -->
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.section-about -->
+        <!-- End About section -->
+
+        <!-- Skills section -->
+        <section class="site-section section-skills">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="{% static 'main\img\doosu2.jpg' %}" style="height: 389px;">
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>TOP SKILLS</h2>
+                        <div class="progress-group">
+                            <p>Python, Django</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="92">
+                                </div>
+                            </div><!-- /.progress -->
+                        </div><!-- /.progress-group -->
+
+                        <div class="progress-group">
+                            <p>HTML, CSS</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="100">
+                                </div>
+                            </div><!-- /.progress -->
+                        </div><!-- /.progress-group -->
+
+                        <div class="progress-group">
+                            <p>JavaScript, jQuery, AJAX</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="80">
+                                </div>
+                            </div><!-- /.progress -->
+                        </div><!-- /.progress-group -->
+
+                        <div class="progress-group">
+                            <p>Photoshop, CorelDraw, UI/UX</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="100">
+                                </div>
+                            </div><!-- /.progress -->
+                        </div><!-- /.progress-group -->
+
+                        <div class="progress-group">
+                            <p>WordPress</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="100">
+                                </div>
+                            </div><!-- /.progress -->
+                        </div><!-- /.progress-group -->
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.section-skills -->
+        <!-- End Skills section -->
+        
+        <!-- I Type section -->
+         <section class="site-section section-type">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col col-md-6 typetxt mt-5 pt-5">
+                        
+                            <h6>And I type really good!</h6>
+                            <p>Check out my certificate from Ratatype</p>
+                        
+                    </div>
+
+                    <div class="col col-md-6">
+                        <img src="{% static 'main/img/cert.jpg' %}" alt="my ratatype certificate">
+                    </div>
+
+                </div>
+                
+            </div>
+        </section>
+        <!-- I Type section -->
+
+        <!-- Services section -->
+        <section class="site-section section-services" id="education">
+
+            <div class="container-fluid">
+                <h2>Education</h2>
+                <p class="section-subtitle" style="display:none;"><span>Exceptional level of service</span></p>
+            </div>
+
+            <div class="container" style="padding-bottom:8%;">
+
+                <div class="carousel slide" id="services-carousel">
+
+                    <div class="item-controls text-center">
+                        <a href="#services-carousel" class="left btn carousel-control" data-slide="prev"><i class="fa fa-angle-left" aria-hidden="true"></i>
+                        </a>
+                        <a href="#services-carousel" class="right btn carousel-control" data-slide="next"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </a>
+                    </div><!-- /.item-controls -->
+
+                    <div class="carousel-indicators nav-tabs text-center">
+                        <a data-target="#services-carousel" href="#" data-slide-to="0" class="active">
+                            <div class="col-xs-4 col-sm-fifth">
+                                <div class="service">
+                                    <div class="rectangle">
+                                        <i class="fa fa-code" aria-hidden="true"></i>
+                                    </div>
+                                    <p class="hidden-xs">Coding</p>
+                                </div>
+                            </div>
+                        </a><!-- /.item -->
+                        <a data-target="#services-carousel" href="#" data-slide-to="1">
+                            <div class="col-xs-4 col-sm-fifth">
+                                <div class="service">
+                                    <div class="rectangle">
+                                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                    </div>
+                                    <p class="hidden-xs">College</p>
+                                </div>
+                            </div>
+                        </a><!-- /.item -->
+                        <a data-target="#services-carousel" href="#" data-slide-to="2">
+                            <div class="col-xs-4 col-sm-fifth">
+                                <div class="service">
+                                    <div class="rectangle">
+                                        <i class="fa fa-building" aria-hidden="true"></i>
+                                    </div>
+                                    <p class="hidden-xs">High School</p>
+                                </div>
+                            </div>
+                        </a><!-- /.item -->
+                        <a data-target="#services-carousel" href="#" data-slide-to="3">
+                            <div class="col-xs-4 col-sm-fifth">
+                                <div class="service">
+                                    <div class="rectangle">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </div>
+                                    <p class="hidden-xs">Auxiliary</p>
+                                </div>
+                            </div>
+                        </a><!-- /.item -->
+                        <a data-target="#services-carousel" href="#" data-slide-to="4">
+                            <div class="col-xs-4 col-sm-fifth">
+                                <div class="service">
+                                    <div class="rectangle">
+                                        <i class="bi bi-motherboard" aria-hidden="true"></i>
+                                    </div>
+                                    <p class="hidden-xs">Others</p>
+                                </div>
+                            </div>
+                        </a><!-- /.item -->
+                    </div><!-- /.carousel-indicators -->
+                        
+                           
+                    <div class="carousel-inner">
+                        <!-- Item 1 -->   
+                        <div id="item1" class="item tab-pane active">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="service-info">
+                                        <h3 class="service-title">Self Taught</h3>
+                                        <p>I believe world education is evolving and the mass majority will soon be self taught professionals, because then learners are not held back by
+                                            the pace of their fellow students - you can go as fast or as slow as you require. I am dedicated, driven and I've put in (and will continue to invest) efforts,
+                                            money and time to learning and improving on my passion - coding. 
+                                            <br>My best courses are from Udemy, Skilshare, and codemy.
+                                         </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <img src="{% static 'main/img/web-design.jpg' %}" class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div><!-- /.item -->
+                        <!-- Item 2 -->   
+                        <div id="item2" class="item tab-pane">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="service-info">
+                                        <h3 class="service-title">College</h3>
+                                        <p style="font-weidth: bold">University of Port Harcourt</p>
+
+                                        <p>Course: History and Diplomatic Studies (Hons.)
+                                            <br> 4.53 CGPA
+                                            <br><i class="bi bi-globe"></i> <a href="https://www.uniport.edu.ng">uniport.edu.ng</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <img src="{% static 'main/img/UNIPORT.jpg' %}" class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div><!-- /.item -->
+                        <!-- Item 3 -->   
+                        <div id="item3" class="item tab-pane">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="service-info">
+                                        <h3 class="service-title">High School</h3>
+                                        <p>School: Sureway High School
+                                            <br><i class="bi bi-globe"></i> <a href="http://surewayinternationalschool.org.ng/">surewayinternationalschool.org.ng/</a>
+                                        </p>                                     
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <img src="{% static 'main/img/SUREWAY.jpg' %}" class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div><!-- /.item -->
+                        <!-- Item 4 -->   
+                        <div id="item4" class="item tab-pane">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="service-info">
+                                        <h3 class="service-title">Auxiliary</h3>
+                                        <p><i>still typing these <font id="stillTyping">...</font></i></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <img src="{% static 'main/img/seo-optimization.pg' %}" class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div><!-- /.item -->
+                        <!-- Item 5 -->   
+                        <div id="item5" class="item tab-pane">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="service-info">
+                                        <h3 class="service-title">Others</h3>
+                                        <p>nothing to see here yet...</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <img src="main/img/social-media.jpg" class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div><!-- /.item -->
+                    </div><!-- /.carousel-inner -->
+                </div><!-- /.carousel -->
+            </div>
+        </section><!-- /.section-services -->
+        <!-- End Services section -->
+
+        <!-- Reviews section -->
+        <section class="site-section section-reviews text-center">
+            <div class="container">
+                <h2>Reviews</h2>
+                <p class="section-subtitle"><span>WHAT PEOPLE HAVE TO SAY ABOUT ME AND MY WORK</span></p>
+            </div>
+
+            <div class="blue-bg">
+                <div class="container">
+                    <div class="review-carousel">
+                        <!-- Review 1 -->
+                        <div class="review">
+                            <div class="rectangle">
+                                <img src="{% static 'main/img/tony.jpg' %}" class="img-res" alt="">
+                            </div>
+                            <p>If there were 100 star rating I would leave 110. I enjoyed the 1 year he spent with us! Such innovative and dedicated worker.</p>
+                            <div class="review-author">
+                                <h3>Tony Nwachukwu</h3>
+                                <p>CEO, Prime Star Labs</p>
+                            </div><!-- /.review-author -->
+                        </div><!-- /.review -->
+                        <!-- Review 2 -->
+                        <div class="review">
+                            <div class="rectangle">
+                                <img src="{% static 'main/img/Ibiene R. Ogundu.jpg' %}" class="img-res" alt="">
+                            </div>
+                            <p>Nice designer! How he comes up with ideas is remarkable. His designs are top-notch as well, one of the best that has worked with us.</p>
+                            <div class="review-author">
+                                <h3>Ibiene R. Ogundu</h3>
+                                <p>Director, iPress Publishers</p>
+                            </div><!-- /.review-author -->
+                        </div><!-- /.review -->
+                        <!-- Review 3 -->
+                        <div class="review">
+                            <div class="rectangle">
+                                <img src="{% static 'main/img/Sarah Oyemwen Osah.jfif' %}" class="img-res" alt="">
+                            </div>
+                            <p>I appreciate the work he did on my site <a style="color:aqua;" href="http://doyenlead.com" target="_blank">doyenlead.com</a>. He was prompt, gave me the quality I admire, and supportive when things had to be changed. Plus, he didn't shy away from explaining things to me, breaking them down in the language I will easily understand.
+                            <div class="review-author">
+                                <h3>Sarah Oyemwen Osah</h3>
+                                <p>Lead Consultant, DoyenLead Consulting</p>
+                            </div><!-- /.review-author -->
+                        </div><!-- /.review -->
+                    </div><!-- /.review-carousel -->
+                </div>
+            </div>
+        </section><!-- /.section-reviews -->
+        <!-- End Reviews section -->
+
+        <!-- Portfolio/Works section --> 
+        <section class="site-section section-works" id="works">
+            <div class="container">
+                <h2>RECENT WORKS</h2>
+                <p class="section-subtitle"><span>the extra mile is always my destination</span></p>
+
+                <div class="portfolio">
+                    <ul class="portfolio-sorting list-inline">
+                        <li><a href="#" class=" active" data-group="all">all</a></li>
+                        <li><a href="#" class="" data-group="webdesign">Web Development</a></li>
+                        <li><a href="#" class="" data-group="graphics">Graphics Design</a></li>
+                        
+                    </ul><!-- /.portfolio-sorting  -->
+
+                    <div id="grid">
+                        
+                        <!-- Portfolio item --> 
+                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webdesign"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="{% static 'main/img/NaijPoll31.jpg' %}" alt="" class="img-res">
+                                    <a href="http://naijpoll.com" class="rectangle" target="_blank">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div><!-- /.portfolio-item-thumb  -->
+                                <div class="portfolio-info">
+                                    <h3>NaijPoll</h3>
+                                    <p>Web Development</p>
+                                </div><!-- /.portfolio-info  -->
+                            </div>
+                        </div><!-- /.col-md-3  -->
+                        <!-- Portfolio item -->
+                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webdesign"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="{% static 'main/img/dOYENWebsite2.jpg' %}" alt="" class="img-res">
+                                    <a href="http://doyenlead.com" class="rectangle" target="_blank">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div><!-- /.portfolio-item-thumb  -->
+                                <div class="portfolio-info">
+                                    <h3>DoyenLead Website</h3>
+                                    <p>Web Development</p>
+                                </div><!-- /.portfolio-info  -->
+                            </div>
+                        </div><!-- /.col-md-3  -->
+                        <!-- Portfolio item -->
+                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webdesign"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="{% static 'main/img/educe.jpg' %}" alt="" class="img-res">
+                                    <a href="http://educe.com.ng" class="rectangle" target="_blank">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div><!-- /.portfolio-item-thumb  -->
+                                <div class="portfolio-info">
+                                    <h3>Educe Nigeria</h3>
+                                    <p>Web Development</p>
+                                </div><!-- /.portfolio-info  -->
+                            </div>
+                        </div><!-- /.col-md-3  -->
+                        <!-- Portfolio item -->
+                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["graphics"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="{% static 'main/img/sweetsoul2.jpg' %}" alt="" class="img-res">
+                                    <a href="https://www.behance.net/gallery/114849717/Sweet-Soul-Logo-Presentation" class="rectangle" target="_blank">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div><!-- /.portfolio-item-thumb  -->
+                                <div class="portfolio-info">
+                                    <h3>Sweet Soul Flyer</h3>
+                                    <p>Graphics Design</p>
+                                </div><!-- /.portfolio-info  -->
+                            </div>
+                        </div><!-- /.col-md-3  -->
+                        <!-- Portfolio item -->
+                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["graphics"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="{% static 'main/img/sweetsoul.jpg' %}" alt="" class="img-res">
+                                    <a href="https://www.behance.net/gallery/114849717/Sweet-Soul-Logo-Presentation" class="rectangle" target="_blank">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div><!-- /.portfolio-item-thumb  -->
+                                <div class="portfolio-info">
+                                    <h3>Sweet Soul Logo</h3>
+                                    <p>Graphics Design</p>
+                                </div><!-- /.portfolio-info  -->
+                            </div>
+                        </div><!-- /.col-md-3  -->
+                        <!-- Portfolio item -->
+                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["graphics"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="{% static 'main/img/valentineDesign.jpg' %}" alt="" class="img-res">
+                                    <a href="https://www.behance.net/gallery/114849971/Valentine-Flyers" class="rectangle" target="_blank">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div><!-- /.portfolio-item-thumb  -->
+                                <div class="portfolio-info">
+                                    <h3>Valentine Designs Collection</h3>
+                                    <p>Graphics Design</p>
+                                </div><!-- /.portfolio-info  -->
+                            </div>
+                        </div><!-- /.col-md-3  -->
+                        <!-- Portfolio item -->
+                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["graphics"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="{% static 'main/img/ReyKicks.jpg' %}" alt="" class="img-res">
+                                    <a href="https://www.behance.net/gallery/114849179/Rey-Kicks-Logo-Presentation" class="rectangle" target="_blank">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div><!-- /.portfolio-item-thumb  -->
+                                <div class="portfolio-info">
+                                    <h3>ReyKicks Logo Presentation</h3>
+                                    <p>Graphics Design</p>
+                                </div><!-- /.portfolio-info  -->
+                            </div>
+                        </div><!-- /.col-md-3  -->
+                        <!-- Portfolio item -->
+                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["graphics"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="{% static 'main/img/TLC.jpg' %}" alt="" class="img-res">
+                                    <a href="https://www.instagram.com/p/Bzn35aEjZ1S/" class="rectangle" target="_blank">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div><!-- /.portfolio-item-thumb  -->
+                                <div class="portfolio-info">
+                                    <h3>TLC Logo</h3>
+                                    <p>Graphics Design</p>
+                                </div><!-- /.portfolio-info  -->
+                            </div>
+                        </div><!-- /.col-md-3  -->
+                         <!-- Portfolio item -->
+                         <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["graphics"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="{% static 'main/img/johnBernard.jpg' %}" alt="" class="img-res">
+                                    <a href="https://www.instagram.com/p/Bzn35aEjZ1S/" class="rectangle" target="_blank">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div><!-- /.portfolio-item-thumb  -->
+                                <div class="portfolio-info">
+                                    <h3>John Bernard</h3>
+                                    <p>Graphics Design</p>
+                                </div><!-- /.portfolio-info  -->
+                            </div>
+                        </div><!-- /.col-md-3  -->
+                         <!-- Portfolio item -->
+                         <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["graphics"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="{% static 'main/img/manipulation.jpg' %}" alt="" class="img-res">
+                                    <a href="https://www.instagram.com/p/B-VGYvzleWc/" class="rectangle" target="_blank">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div><!-- /.portfolio-item-thumb  -->
+                                <div class="portfolio-info">
+                                    <h3>Photo Manipulation</h3>
+                                    <p>Graphics Design</p>
+                                </div><!-- /.portfolio-info  -->
+                            </div>
+                        </div><!-- /.col-md-3  -->
+                        <!-- Portfolio item -->
+                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["graphics"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="{% static 'main/img/lurdSilas.jpg' %}" alt="" class="img-res">
+                                    <a href="https://www.behance.net/gallery/150186191/Lurd-Silas-Album-Art-Collection" class="rectangle" target="_blank">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div><!-- /.portfolio-item-thumb  -->
+                                <div class="portfolio-info">
+                                    <h3>Lurd Silas Album Arts</h3>
+                                    <p>Graphics Design</p>
+                                </div><!-- /.portfolio-info  -->
+                            </div>
+                        </div><!-- /.col-md-3  -->
+                        <!-- Portfolio item -->
+                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["graphics"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="{% static 'main/img/92571142_3660805910656637_1373395557534101405_n.jpg' %}" alt="" class="img-res">
+                                    <a href="https://www.instagram.com/p/B-rMOF6FWuy/" class="rectangle" target="_blank">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div><!-- /.portfolio-item-thumb  -->
+                                <div class="portfolio-info">
+                                    <h3>Photo Manipulation</h3>
+                                    <p>Graphics Design</p>
+                                </div><!-- /.portfolio-info  -->
+                            </div>
+                        </div><!-- /.col-md-3  -->
+
+                    </div><!-- /#grid -->
+                </div>
+            </div>
+        </section><!-- /.section-works -->
+        <!-- End Works section --> 
+
+        <!-- Me section --> 
+        <section class="section-background section-me background-overlay text-center">
+            <div class="container page-scroll">
+                <h2>Are You Impressed By My Work?</h2>
+                <p>I will be glad to hear from you</p>
+                <a href="#contact" class="btn">GET IN TOUCH</a>
+            </div>
+        </section><!-- /.section-me -->
+        <!-- End Me section --> 
+
+        <!-- Clients section --> 
+        <section class="section-clients"  style="background-color:#e7fff9bb;">
+            <div class="container">
+                <div class="text-center section-diff-title">     
+                    <h2 style="padding-bottom:2em;">Clients I’ve Worked So Far 
+                        <br> <font style="font-size:0.5em;"><i class="bi bi-arrow-left"></i> <font style="color:blue; font-weight:bold;">swipe to see more</font> <i class="bi bi-arrow-right"></i> </font>
+                    </h2>
+                    
+                </div> 
+
+                <div class="clients-carousel">
+                    <!-- Client --> 
+                    <a href="https://educe.com.ng" class="client">
+                        <img src="{% static 'main/img/educelogo.png' %}" style="height:50px;" class="img-responsive" alt="">
+                    </a><!-- /.client -->                    
+                    <!-- Client -->
+                    <a href="#" class="client">
+                        <img src="{% static 'main/img/reykicksLogo.png' %}" class="img-responsive" alt="">
+                    </a><!-- /.client -->                    
+                    <!-- Client -->
+                    <a href="#" class="client">
+                        <img src="{% static 'main/img/sweetsoulLogo.png' %}" class="img-responsive" alt="">
+                    </a><!-- /.client -->                    
+                    <!-- Client -->
+                    <a href="#" class="client">
+                        <img src="{% static 'main/img/DOYENLEADLogo.png' %}" class="img-responsive" alt="">
+                    </a><!-- /.client -->                    
+                    <!-- Client -->
+                    <a href="#" class="client">
+                        <img src="{% static 'main/img/MERITABLE.png' %}" style="width:100px; height:140px; margin-top:-20px;" class="img-responsive" alt="">
+                    </a><!-- /.client -->                    
+                    <!-- Client -->
+                    <a href="#" class="client">
+                        <img src="{% static 'main/img/nounLOGO.png' %}" class="img-responsive" alt="">
+                    </a><!-- /.client -->
+                </div><!-- /.clients-carousel -->
+            </div>
+        </section><!-- /.section-clients -->
+        <!-- End Clients section --> 
+
+        <!-- Contacts section --> 
+        <section class="site-section section-contact" id="contact">
+            <div class="container">
+                <h2>Contact Doosu</h2>
+                <p class="section-subtitle"><span>Here i am</span></p>
+                <div class="row">
+                    <form action = "sendFeedBack" method="POST">
+                        {% csrf_token %}
+                        <div class="col-md-4">
+                            <input class="form-control" name="name" type="text" placeholder="Name" required>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-control" type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-control" type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="col-sm-12">
+                            <textarea class="form-control" placeholder="Your Message"  name="message" required></textarea>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <button class="btn btn-inverted">Send Message</button>
+                        </div>  
+                    </form>
+                </div>
+            </div>
+        </section><!-- /.section-contact-->
+        <!-- End Contacts section --> 
+        
+        <!-- Social Networks section --> 
+        <section class="section-networks blue-bg">
+            <div class="container">
+                <a href="https://facebook.com/doosu.bere" class="rectangle" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="https://instagram.com/dfadagrafix" class="rectangle" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://linkedin.com/in/doosu-bere" class="rectangle" target="_blank">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="https://www.behance.net/doosubere" class="rectangle" target="_blank">
+                    <i class="bi bi-behance"></i>
+                </a>
+                <a href="mailto:dskbagain@gmail.com" class="rectangle" target="_blank">
+                    <i class="fa fa-google"></i>
+                </a>
+                <a href="https://github.com/cyberds" class="rectangle" target="_blank">
+                    <i class="fa fa-github"></i>
+                </a>
+            </div>
+        </section><!-- /.section-networks-->
+        <!-- End Social Networks section --> 
+
+    </main><!-- /#main -->
+    <!-- End Main content -->
+
+    <!-- Footer --> 
+    <footer id="colophon" class="site-footer">
+
+        <div class="container-fluid">
+
+            <ul class="list-unstyled list-inline">
+                <li class="page-scroll"><a href="#top">Home</a></li>
+                <li class="page-scroll"><a href="#intro">Intro</a></li>
+                <li class="page-scroll"><a href="#about">About</a></li>
+                <li class="page-scroll"><a href="#education">Education</a></li>
+                <li class="page-scroll"><a href="#works">Projects</a></li>
+                <li class="page-scroll"><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="page-scroll">
+                <a href="#top" class="rectangle">
+                    <i class="fa fa-angle-double-up"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="container text-center">
+            <p class="copyright">&copy; <a href="https://github.com/cyberds" target="_blank">Doosu</a> - 2022</p>
+        </div>
+
+    </footer><!-- /#footer -->
+    <!-- End Footer --> 
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery core js | Do not Delete -->
+    <script src="{% static 'main/js/jquery.min.js' %}"></script>
+
+    <!-- Bootstrap core js | Do not Delete -->
+    <script src="{% static 'main/js/bootstrap.min.js' %}"></script>
+
+    <!-- Bootstrap progressbar JS -->
+    <script src="{% static 'main/js/bootstrap-progressbar.min.js' %}"></script>
+
+    <!-- Count To JS -->
+    <script src="{% static 'main/js/jquery.countTo.min.js' %}"></script>
+
+    <!-- Easing JS -->
+    <script src="{% static 'main/js/jquery.easing.min.js' %}"></script>
+
+    <!-- Shuffle JS -->
+    <script src="{% static 'main/js/jquery.shuffle.min.js' %}"></script>
+
+    <!-- Slick Carousel JS -->
+    <script src="{% static 'main/js/slick.min.js' %}"></script>
+
+    <!-- Touchswipe JS -->
+    <script src="{% static 'main/js/touchswipe.min.js' %}"></script>
+
+          
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typingEffect = new Typed(".multiText",{
+            strings : ['Python', 'Django', 'REST', 'HTML5', 'CSS3', 'Bootstrap', 'JavaScript', 'AJAX', 'jQuery', 'Heroku', 'PostGres', 'mySQL', 'WordPress', 'Photoshop', 'CorelDraw', 'Figma'],
+            loop: true,
+            backDelay: 1500,
+            typeSpeed: 100,
+            backSpeed: 80,
+        });
+        
+        var i = 0;
+        var txt = '...'; /* The text */
+        var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+        while(i < txt.length){
+            document.getElementById("stillTyping").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+            
+        }
+
+
+    </script>
+
+        <!-- Custom JS -->
+    <script src="{% static 'main/js/script.js' %}"></script>
+
+</body>
+</html>

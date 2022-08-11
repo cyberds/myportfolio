@@ -1,0 +1,174 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Doosu's Portfolio</title>
+
+    <meta name="description" content="Hi, I'm Doosu Bere, a fullstack web developer. Please call me, I'm available for hire. +2349081505800 or email: dskbagain@gmail.com">
+    <meta name="author" content="Doosu Bere">
+    <meta name="keywords" content="Doosu Bere">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Varela" rel="stylesheet">
+
+    <!-- Favicon
+    ================================================== -->
+    <link rel="icon" type="image/x-icon" href="{% static 'main/img/favicon2.png' %}">
+    <link rel="manifest" href="{% static 'main/img/manifest.json' %}">
+    <link rel="mask-icon" href="{% static 'main/img/safari-pinned-tab.svg' %}" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Stylesheets
+    ================================================== -->
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    
+
+    <!-- Font Awesome core CSS -->
+    <link rel="stylesheet" href="{% static 'main/css/font-awesome.min.css' %}" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <!-- Main content -->
+    <main id="main" class="site-main">
+        
+        <!-- I Type section -->
+         <section class="site-section section-type">
+            <div class="container">
+
+                <div class="row">
+                    <p style="color: blue; font-size: 5rem; text-align:center"> Thank You {{sender}}! </p>
+                    
+                        {% if message %}
+                        <p style="color:grey; text-align:center; margin-top: 5%;">I've seen your message"{{message}}". 
+                            I really appreciate hearing from you. 
+                        If your message requires a response, be sure I will respond as quickly as possible.</p>
+                        {% else %}
+                        <p style="color:grey; text-align:center; margin-top: 5%;"> I really appreciate hearing from you. 
+                        If your message requires a response, be sure I will respond as quickly as possible.</p>
+                        {% endif %}
+                </div>
+                <div class="row" style="padding-top:20%;">
+                  <a href="{% url 'home' %}"> <button class="btn btn-secondary"> go back <i class="bi bi-arrow-left"></i></button></a>
+                </div>
+                
+            </div>
+        </section>
+        <!-- I Type section -->
+
+        
+        <!-- Social Networks section --> 
+        <section class="section-networks blue-bg">
+            <div class="container">
+                <a href="facebook.com/doosu.bere" class="rectangle">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="instagram.com/dfadagrafix" class="rectangle">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="twitter.com/lotscam" class="rectangle">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="youtube.com/dfadagrafix" class="rectangle">
+                    <i class="fa fa-youtube-play"></i>
+                </a>
+                <a href="mailto:dskbagain@gmail.com" class="rectangle">
+                    <i class="fa fa-envelope"></i>
+                </a>
+                <a href="github.com/cyberds" class="rectangle">
+                    <i class="fa fa-github"></i>
+                </a>
+            </div>
+        </section><!-- /.section-networks-->
+        <!-- End Social Networks section --> 
+
+    </main><!-- /#main -->
+    <!-- End Main content -->
+
+    <!-- Footer --> 
+    <footer id="colophon" class="site-footer">
+
+        <div class="container-fluid">
+
+            <ul class="list-unstyled list-inline">
+                <li class="page-scroll"><a href="{% url 'home' %}#top">Home</a></li>
+                <li class="page-scroll"><a href="{% url 'home' %}#intro">Intro</a></li>
+                <li class="page-scroll"><a href="{% url 'home' %}#about">About</a></li>
+                <li class="page-scroll"><a href="{% url 'home' %}#services">Services</a></li>
+                <li class="page-scroll"><a href="{% url 'home' %}#team">Team</a></li>
+                <li class="page-scroll"><a href="{% url 'home' %}#history">History</a></li>
+                <li class="page-scroll"><a href="{% url 'home' %}#works">Works</a></li>
+                <li class="page-scroll"><a href="{% url 'home' %}#contact">Contact</a></li>
+            </ul>
+
+            <div class="page-scroll">
+                <a href="#top" class="rectangle">
+                    <i class="fa fa-angle-double-up"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="container text-center">
+            <p class="copyright">&copy; <a href="http://github.com/cyberds" target="_blank">Doosu</a> - 2022</p>
+        </div>
+
+    </footer><!-- /#footer -->
+    <!-- End Footer --> 
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery core js | Do not Delete -->
+    <script src="{% static 'main/js/jquery.min.js' %}"></script>
+
+    <!-- Bootstrap core js | Do not Delete -->
+    <script src="{% static 'main/js/bootstrap.min.js' %}"></script>
+
+    <!-- Bootstrap progressbar JS -->
+    <script src="{% static 'main/js/bootstrap-progressbar.min.js' %}"></script>
+
+    <!-- Count To JS -->
+    <script src="{% static 'main/js/jquery.countTo.min.js' %}"></script>
+
+    <!-- Easing JS -->
+    <script src="{% static 'main/js/jquery.easing.min.js' %}"></script>
+
+    <!-- Shuffle JS -->
+    <script src="{% static 'main/js/jquery.shuffle.min.js' %}"></script>
+
+    <!-- Slick Carousel JS -->
+    <script src="{% static 'main/js/slick.min.js' %}"></script>
+
+    <!-- Touchswipe JS -->
+    <script src="{% static 'main/js/touchswipe.min.js' %}"></script>
+
+
+        <!-- Custom JS -->
+    <script src="{% static 'main/js/script.js' %}"></script>
+
+</body>
+</html>
