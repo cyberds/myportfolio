@@ -451,7 +451,7 @@ body{
   background: url(../img/hero2.jpg) center repeat;
   border: none;
   color: #101631;
-  z-index: 100;
+  z-index: 1000;
   transition: background-color 1s ease 0s;
 }
 
